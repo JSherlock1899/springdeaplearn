@@ -1,4 +1,4 @@
-package com.sherlock.test;
+package com.sherlock;
 
 import com.sherlock.controller.UserController;
 import com.sherlock.service.UserService;

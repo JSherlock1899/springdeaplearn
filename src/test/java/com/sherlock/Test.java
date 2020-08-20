@@ -1,4 +1,4 @@
-package com.sherlock.test;
+package com.sherlock;
 
 /**
  * @author: sherlock

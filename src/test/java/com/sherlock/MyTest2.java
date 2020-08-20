@@ -1,4 +1,4 @@
-package com.sherlock.test;
+package com.sherlock;
 
 import com.sherlock.annotation.AutoWired;
 import com.sherlock.controller.UserController;

@@ -12,6 +12,9 @@ import org.springframework.stereotype.Component;
 public class UserService implements BeanNameAware {
 
 
+    public void test() {
+        System.out.println("UserService.test....");
+    }
     @Override
     public void setBeanName(String s) {
 //        System.out.println("bean的名字为：" + s);

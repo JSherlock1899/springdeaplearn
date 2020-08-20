@@ -4,10 +4,7 @@ import com.sherlock.pojo.Order;
 import com.sherlock.pojo.User;
 import com.sherlock.utils.SherlockImportBeanDefinitionRegistrar;
 import com.sherlock.utils.SherlockImportSelector;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.*;
 
 /**
  * @author: sherlock
@@ -16,14 +13,7 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration
 @ComponentScan("com.sherlock")
-//@Import({User.class, Order.class})
-//@Import(SherlockImportSelector.class)
-@Import(SherlockImportBeanDefinitionRegistrar.class)
+@EnableAspectJAutoProxy(proxyTargetClass = false)
 public class AppConfig {
-
-//    @Bean("sherlock")
-//    public User user() {
-//        return new User("sherlock", 19);
-//    }
 
 }
